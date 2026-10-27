@@ -58,7 +58,6 @@ export function Landing({ qrDataUrl, waLink, onStart }: { qrDataUrl: string; waL
               rel="noopener noreferrer"
               className="group flex items-center gap-3 rounded-2xl bg-white/95 p-2.5 pr-4 text-tumelero-marinho shadow-lg shadow-black/20"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={qrDataUrl} alt="QR code para falar com o João no WhatsApp" width={84} height={84} className="rounded-lg" />
               <span className="text-sm leading-tight">
                 <strong className="block text-base">No celular?</strong>

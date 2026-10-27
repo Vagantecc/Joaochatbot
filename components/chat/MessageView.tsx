@@ -85,7 +85,6 @@ function osmTile(lat: number, lng: number, z = 15) {
 function MapPreview({ lat, lng }: { lat: number; lng: number }) {
   return (
     <div className="relative h-36 w-full overflow-hidden bg-[#e8e2d6]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={osmTile(lat, lng)} alt="" className="h-full w-full object-cover" loading="lazy" />
       <svg className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full drop-shadow" width="28" height="36" viewBox="0 0 24 32" aria-hidden>
         <path fill="#EA4335" d="M12 0C5.4 0 0 5.2 0 11.7 0 20.4 12 32 12 32s12-11.6 12-20.3C24 5.2 18.6 0 12 0Z" />
@@ -175,7 +174,6 @@ export function MessageView({
         <Bubble mine={false} tail={showTail} flush>
           <div className="w-64 sm:w-72">
             {p.imageUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
               <img src={p.imageUrl} alt="" className="h-44 w-full bg-white object-contain p-2" loading="lazy" />
             ) : (
               <div className="grid h-24 place-items-center bg-[#f3ede6] text-3xl" aria-hidden>
